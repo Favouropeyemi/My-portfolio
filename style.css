@@ -1,0 +1,2367 @@
+*{
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+  }
+ 
+  .container{
+    max-width: 1175px;
+   width: 100%;
+    margin: 0 auto;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  section{
+    height: 80vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  :root{
+       --bg-color:rgb(81, 81, 221); 
+      --text-color:white;
+      --main-color:rgba(207, 207, 15, 0.781);
+  }
+  html{
+      overflow-x: hidden;
+      font-size: 62.5%;
+  }
+  body{
+      background-color: var(--bg-color);
+  }
+  .navigator{
+      position: fixed;
+      z-index: 100;
+      top:0;
+      left:0;
+      width: 100%;
+      padding: 2rem 7%;
+      display: flex;
+      align-items: center;
+      transition: 0.5s;
+      background:transparent;
+      justify-content: space-between;
+  }
+  .logo{
+      font-size: 2.5rem;
+      color: var(--main-color);
+      font-weight: 600;
+      cursor: pointer;
+      margin-right: auto;
+  }
+  .navbar span a{
+    color: var(--main-color);
+  }
+  .navbar a{
+      position: relative;
+      text-transform: capitalize;
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-right: 4.8rem;
+      color: var(--text-color);
+  }
+  #menu-icon{
+      font-size: 3.6rem;
+      color: var(--text-color);
+      display: none;
+  }
+  .Home .container{
+    padding-top: 7em;
+    display: flex;
+  }
+  .Home-info{
+     flex: 1;
+     padding-top: 4em;
+  }
+  .Home-info h6{
+    font-weight: 100;
+    font-size: 2.1em;
+    color: white;
+  }
+  .Home-info h2{
+    font-size: 4em;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .Home-info h5{
+    font-size: 2.1em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .Home-info h5 span{
+    margin-right: 10px;
+  }
+  .Home-info h4{
+    font-size: 2.5em;
+    margin-right: 2em;
+    color: var(--main-color);
+    font-style: italic;
+    padding-top: 5px;
+  }
+  .Home-info h4 span{
+    color: white;
+    font-size: 1em;
+  }
+  .Home-info .know-more{
+    display: flex;
+  }
+  .contact-icons a i{
+     display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 4em;
+    color: white;
+    cursor: pointer;
+
+  }
+  .contact-icons {
+    display: flex;
+  }
+  .Home-info button a{
+    color: white;
+    text-transform: uppercase;
+
+  }
+  
+  .Home-pics{
+    flex: 1;
+  }
+  .Home-pics img{
+    width: 70%;
+    border: 15px solid;
+    border-color: var(--main-color);
+  }
+.container .Home-icons{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding-top: 2em;
+}
+.Home-icons h5{
+  font-size: 2.5em;
+  color: var(--main-color);
+}
+.Home-icons h3{
+  color: white;
+}
+.Home-icons p{
+  color: rgb(29, 28, 28);
+}
+.Home-icon1,.Home-icon2,.Home-icon3{
+  border: 2px solid;
+  font-size: 2em;
+  margin-right: 1em;
+  padding-bottom: 1.2em;
+  background-color: var(--bg-color);
+  border-color: var(--main-color);
+}
+.Home-icons h5,h3,p{
+  margin-left: 1em;
+  margin-top: 10px;
+}
+ 
+ .container .developer h6{
+  text-transform: uppercase;
+  color:var(--main-color) ;
+  font-size: 2em;
+  text-align: center;
+}
+.container .developer h2{
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+.myself {
+  width: 50em;
+  padding: 20px;
+  background-color:var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  display: grid;
+  grid-template-areas:
+      "badge main"
+      "laptop main"
+      "laptop text";
+  grid-gap: 10px;
+}
+
+.badge-icon {
+  grid-area: badge;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-icon .bx {
+  font-size: 6em;
+  border: 2px solid;
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+}
+
+.main-image {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image img {
+  width: 25em;
+  height: 30em;
+  border-radius: 50%;
+}
+
+.text-section {
+  grid-area: text;
+  text-align: right;
+  color: white;
+}
+
+.text-section p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.text-section span {
+  font-size: 14px;
+  display: block;
+}
+
+.laptop-image {
+  grid-area: laptop;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptop-image img {
+  width: 15em;
+  height: 11em;
+  border-radius: 10px;
+}
+.myself{
+  margin-right: 6em;
+  background-color: white;
+}
+.container .developer2{
+  display: flex;
+  padding-top: 2em;
+ 
+}
+.About h1{
+  font-size: 2.5em;
+  color:white;
+  padding-bottom: 13px;
+}
+.About h2{
+  font-size: 2em;
+  padding-bottom: 13px;
+}
+.container .my-info{
+  display: flex;
+  border: 2px solid;
+  width: 65%;
+  border-color: var(--main-color);
+  border-radius: 1em;
+  height: 20em;
+}
+.my-info1{
+  border-right: 2px solid;  
+  border-color: var(--main-color);
+}
+.my-info1 p{
+  padding-right: 7px;
+}
+.my-info p strong{
+  font-size: 2.5em;
+  color: white;
+}
+.my-info p span{
+   font-size: 1.5em; 
+}
+.cv-button a button{
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .service-header h2{
+  padding-top: 2em;
+  text-align: center;
+  font-size: 3em;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.service-header h6{
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
+.container .my-services{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2em;
+}
+.my-service1,.my-service2,.my-service3,.my-service4{
+  border: 2px solid;
+  width: 35em;  
+  margin-left: 8.5em;
+  height: 15em;
+  margin-top: 1em;
+  border-color: var(--main-color);
+
+}
+.my-services h5 .bx{
+  font-size: 4.5em  ;
+  color: var(--main-color);
+}
+.container .my-services h5{
+  text-align: center;
+}
+.container .my-services h1{
+  text-align: center;
+  color: white;
+}
+.my-services p{
+  font-size: 1.5em;
+}
+
+.Projects{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+  
+}
+.Project-header{
+  font-size: 2em;
+  /* padding: 20px; */
+  text-align: center;
+}
+.Project-header h5{
+  color: var(--main-color);
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.Project-header h2{
+  font-size: 1.2em;
+}
+.Project-text .link a{
+  
+  display: flex;
+    padding-top: 4em; 
+    padding-left: 1em; 
+    font-size: 2em;
+    color: black;
+}
+ .links a{
+  padding-top: 1em; 
+    padding-left: 8em; 
+    font-size: 2em;
+    color: black;
+}
+
+.Project-text .text{
+  font-weight: 800;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  
+}
+.Project1,.Project3{
+  display: flex;
+   background-image: url(hqd6.jfif);    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  padding-right: 5em;
+  padding-bottom: 22em;
+  margin-right: 15px;
+}
+
+.Project1 .date,.Project2 .date,.Project3 .date{
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+  background-color: black;
+  color: white;
+  /* height: 45%; */
+   border-width: 10px; 
+  border-bottom-right-radius: 60px;
+  height: 8.5em;
+  width: 33%;
+}
+.Project1 .image .date{
+  display: flex;
+  flex-wrap: wrap;
+}
+.date-text{
+  display: flex;
+  flex-direction: column;
+}
+.date1{
+  border-right: solid 1px;
+  padding-right: 9px; 
+  height: 7em;
+}
+
+.date2{
+  padding-left: -7px;
+  margin-bottom: 1px;
+}
+.Project2 .date2{
+  margin-bottom: 2em;
+}
+.date11,.date12,.date13{
+  font-weight: 900;
+  font-size: 15px;
+  color: var(--main-color);
+}
+.date120{
+  font-size: 1em;
+  
+}
+.month1,.month3{
+  text-align: center;
+}
+.Project2{
+   background-image: url(service1.jfif); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+      height: 32em;    
+    width: 95%; 
+  
+  
+}
+.Project2 .date{  
+ width: 30%;  
+ /* height: 80px;  */
+ 
+}
+.date12 span{
+  font-size: 40%;
+  align-items: flex-end;
+}
+.Project3{
+   background-image: url(home2.jfif); 
+}
+
+.footer-text{
+  padding-top: 3em;
+  text-align: center;
+}
+.footer-text h6{
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 15px;
+}
+.footer-text h2{
+  text-transform: capitalize;
+  font-size: 25px;
+  color: black;
+}
+
+.footer-text h5{
+color: black;
+font-size: 15px;
+text-transform: capitalize;
+}
+
+.footer-contacts{
+ display: flex;
+ justify-content: center;
+
+}
+.footer-contact1,.footer-contact2,.footer-contact3,.footer-contact4,.footer-contact5{
+  border: 1px solid;
+  font-size: 2.5em;
+  margin: 10px;
+   display: flex; 
+   width: 10em;
+   background-color: #333333;
+    text-align: center; 
+}
+.footer-contactss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-contactss i,.footer-contacts i{
+  color: white;
+  text-align: center;
+}
+.footer-contactss p{
+  color: var(--main-color);
+  font-size: 15px;
+}
+.footer-contacts p{
+  color: var(--main-color);
+  font-size: 15px;
+}
+
+.copy-write{
+  text-align: center;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width:991px){
+  
+  .container{
+    padding-left: 1em;
+  }
+
+  .Home .container{
+    padding-top: 5em;
+    display: flex;
+    flex-direction: row;
+  }
+  .Home-info{
+     flex: 1;
+     padding-top: 4em;
+  }
+  .Home-info h6{
+    font-size: 2em;
+  }
+  .Home-info h2{
+    font-size: 2.5em;
+    color: white;
+  }
+  .Home-info h5{
+    font-size: 2em;
+  }
+ 
+  .Home-info h4{
+    font-size: 2em;
+  }
+  .Home-info h4 span{
+    color: white;
+    font-size: 1.5em;
+  }
+  .Home-info .know-more{
+    display: flex;
+  }
+  .contact-icons a i{  
+    font-size: 3.5em;
+    margin-top: 7px;
+
+  }
+  .Home-info button a{
+    color: white;
+    text-transform: uppercase;
+
+  }
+  
+  .Home-pics img{
+    width: 80%;
+    border: 12px solid;
+    border-color: var(--main-color);
+    margin-top: 2em;
+  }
+.container .Home-icons{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding-top: 1em;
+}
+.Home-icons h5{
+  font-size: 2.5em;
+  color: var(--main-color);
+}
+.Home-icons h3{
+  color: white;
+}
+.Home-icons p{
+  color: rgb(29, 28, 28);
+}
+.Home-icon1,.Home-icon2,.Home-icon3{
+  border: 2px solid;
+  font-size: 1.5em;
+  height: 17em;
+  width: 26em;
+  margin-bottom: 1em;
+  background-color: var(--bg-color);
+  border-color: var(--main-color);
+}
+.Home-icons h5,h3,p{
+   margin-left: 1em; 
+  margin-top: 10px;
+}
+
+
+
+ 
+ .container .developer h6{
+  color:var(--main-color) ;
+  font-size: 2em;
+  margin-top: 3em;
+  margin-right: 2em;
+}
+.container .developer h2{
+  font-size: 2.5em;
+  color: white;
+  margin-right: 2em;
+}
+.myself {
+  width: 45em;
+  height: 36em;
+  margin-left: 10em;
+}
+
+.card {
+  display: grid;
+  grid-template-areas:
+      "badge main"
+      "laptop main"
+      "laptop text";
+  grid-gap: 10px;
+}
+
+.badge-icon {
+  grid-area: badge;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-icon .bx {
+  font-size: 5em;
+  border: 2px solid;
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+}
+
+.main-image {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image img {
+  width: 23em;
+  height: 25em;
+  border-radius: 50%;
+}
+
+.text-section {
+  grid-area: text;
+  text-align: right;
+  color: white;
+}
+
+.text-section p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.text-section span {
+  font-size: 14px;
+  display: block;
+}
+
+.laptop-image {
+  grid-area: laptop;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptop-image img {
+  width: 13em;
+  height: 10em;
+  border-radius: 10px;
+}
+.myself{
+  margin-right: 6em;
+  
+}
+.container .developer2{
+  display: flex;
+  padding-top: 2em;
+  flex-direction: row;}
+
+
+.About h1{
+  font-size: 2em;
+  color:white;
+  padding-bottom: 13px;
+  padding-top: 20px;
+  text-align: center;
+  margin-right: 2em;
+}
+.About h2{
+  font-size: 1.1em;
+  padding-bottom: 13px;
+}
+.container .my-info{
+  display: flex;
+  border: 2px solid;
+  width: 93%;
+  border-color: var(--main-color);
+  border-radius: 1em;
+  margin-bottom: 1em;
+  height: 14em;
+  font-size: 1.2em;
+  margin-left: 1px;
+}
+.my-info1{
+  border-right: 2px solid;
+  border-color: var(--main-color);
+}
+.my-info1 p{
+  padding-right: 7px;
+}
+.my-info p strong{
+  font-size: 1.5em;
+  color: white;
+}
+.my-info p span{
+   font-size: 1em; 
+}
+.cv-button a button{
+  margin-top: 1em;
+  margin-left: 10em;
+  padding: 10px;
+  border-radius: 1.5em;
+ 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.service-header{
+  margin-left: -40px;
+}
+
+.service-header h2{
+  padding-top: 3em;
+  text-align: center;
+  font-size: 2.5em;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.service-header h6{
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+}
+
+.container .my-services{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2em;
+  margin-left: 35px;
+}
+.my-service1,.my-service2,.my-service3,.my-service4{
+  border: 2px solid;
+  width: 33em;  
+  margin-left: 1em;
+  height: 20em;
+  margin-top: 1em;
+  border-color: var(--main-color);
+
+}
+.my-services h5 .bx{
+  margin-top: 10px;
+  font-size: 5em  ;
+  color: var(--main-color);
+}
+.container .my-services h5{
+  text-align: center;
+}
+.container .my-services h1{
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+}
+.my-services p{
+  font-size: 1.5em;
+}
+
+
+/*  */
+
+.Projects{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+
+}
+.Project-header{
+font-size: 2em;
+margin-left: -25px;
+margin-bottom: 10px;
+text-align: center;
+padding-top: 9em;
+}
+.Project-header h5{
+color: var(--main-color);
+font-size: 1.5em;
+text-transform: uppercase;
+}
+.Project-header h2{
+font-size: 18px;
+}
+.Project-text .link a{
+
+display: flex;
+  padding-top: 2.8em; 
+  padding-left: 2.8em; 
+  font-size: 2em;
+  color: black;
+  align-content: center;
+}
+.Project-text .links a{
+
+  padding-left: 8.2em; 
+  font-size: 2em;
+  color: black;
+}
+
+.Project-text .text{
+font-weight: 800;
+font-size: 11px;
+padding: 5px;
+
+}
+.Project1,.Project3{
+display: flex;
+ background-image: url(hqd6.jfif);    
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+ width: 85%; 
+padding-bottom: 12em;
+margin-right: 15px;
+height: 22em;
+}
+
+
+.Project1 .date,.Project2 .date,.Project3 .date{
+display: flex;
+border: 1px solid;
+border-color: black;
+background-color: black;
+color: white;
+ border-width: -5px; 
+border-bottom-right-radius: 50px;
+height: 5.5em;
+width: 22.5%;
+}
+
+.Project1 .image .date{
+display: flex;
+flex-wrap: wrap;
+}
+.date-text{
+display: flex;
+flex-direction: column;
+}
+.date1{
+border-right: solid 1px;
+padding-right: 10px; 
+height: 5em;
+}
+
+.date2{
+padding-left: -5px;
+margin-bottom: 1px;
+}
+.Project2 .date2{
+margin-bottom: 10px;
+}
+.date11,.date12,.date13{
+font-weight: 900;
+font-size: 8px;
+color: var(--main-color);
+}
+.date120{
+font-size: 8px;
+
+}
+.month1,.month3{
+text-align: center;
+font-size: 8px;
+/* color: var(--main-color); */
+}
+.Project2{
+ background-image: url(service1.jfif); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+  height: 22em;  
+ width: 85%; 
+
+
+}
+.Project2 .date{  
+width: 21%; 
+text-align: center;
+align-items: center;    
+}
+.date12 span{
+font-size: 10%;
+align-items: flex-end;
+}
+.Project3{
+ background-image: url(home2.jfif); 
+ width: 85%; 
+ padding-bottom: 8em;
+ margin-right: 15px;
+ padding-bottom: 5em;
+ height: 20em;
+}
+
+
+
+
+.footer-text{
+ padding-top: 30em;
+
+}
+.footer-text h6{
+
+font-size: 27px;
+}
+.footer-text h2{
+text-transform: capitalize;
+font-size: 18px;
+margin-top: 3px;
+margin-bottom: 3px;    
+
+}
+
+.footer-text h5{
+color: black;
+font-size: 12px;
+
+}
+
+.footer-contact1,.footer-contact2,.footer-contact3,.footer-contact4,.footer-contact5{
+border: 1px solid;
+font-size: 2.5em;
+margin: 10px;
+ display: flex; 
+ width: 9em;
+ background-color: #333333;
+  text-align: center; 
+}
+
+
+.footer-contactss p{
+
+font-size: 12px;
+}
+.footer-contacts p{
+
+font-size: 11px;
+}
+
+.copy-write{
+
+font-size: 20px;
+}
+
+}
+
+
+
+  
+  
+  @media screen and (max-width:768px){
+     #menu-icon{
+      display: block;
+     }
+     .navbar {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 1rem;
+      display: none;
+      left: 0;
+      background-color: var(--bg-color);
+      border: 0.1rem solid;
+     }
+     .navbar.active{
+      display: block;
+     }
+     .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+     }
+
+
+
+
+     .container{
+      padding-left: 1em;
+    }
+
+    .Home .container{
+      padding-top: 5em;
+      display: flex;
+      flex-direction: row;
+    }
+    .Home-info{
+       flex: 1;
+       padding-top: 4em;
+    }
+    .Home-info h6{
+      font-size: 2em;
+    }
+    .Home-info h2{
+      font-size: 2.5em;
+      color: white;
+    }
+    .Home-info h5{
+      font-size: 2em;
+    }
+   
+    .Home-info h4{
+      font-size: 2em;
+    }
+    .Home-info h4 span{
+      color: white;
+      font-size: 1.5em;
+    }
+    .Home-info .know-more{
+      display: flex;
+    }
+    .contact-icons a i{  
+      font-size: 3.5em;
+      margin-top: 7px;
+  
+    }
+    .Home-info button a{
+      color: white;
+      text-transform: uppercase;
+  
+    }
+    
+    .Home-pics img{
+      width: 90%;
+      border: 12px solid;
+      border-color: var(--main-color);
+      margin-top: 2em;
+    }
+  .container .Home-icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 1em;
+  }
+  .Home-icons h5{
+    font-size: 2.5em;
+    color: var(--main-color);
+  }
+  .Home-icons h3{
+    color: white;
+  }
+  .Home-icons p{
+    color: rgb(29, 28, 28);
+  }
+  .Home-icon1,.Home-icon2,.Home-icon3{
+    border: 2px solid;
+    font-size: 1.3em;
+    height: 17em;
+    width: 26em;
+    margin-bottom: 1em;
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
+  }
+  .Home-icons h5,h3,p{
+     margin-left: 1em; 
+    margin-top: 10px;
+  }
+
+  
+ 
+   
+   .container .developer h6{
+    color:var(--main-color) ;
+    font-size: 2em;
+    margin-top: 3em;
+    margin-right: 2em;
+  }
+  .container .developer h2{
+    font-size: 2.5em;
+    color: white;
+    margin-right: 2em;
+  }
+  .myself {
+    width: 45em;
+    height: 36em;
+    margin-left: 10em;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-areas:
+        "badge main"
+        "laptop main"
+        "laptop text";
+    grid-gap: 10px;
+  }
+  
+  .badge-icon {
+    grid-area: badge;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .badge-icon .bx {
+    font-size: 5em;
+    border: 2px solid;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  .main-image {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-image img {
+    width: 23em;
+    height: 25em;
+    border-radius: 50%;
+  }
+  
+  .text-section {
+    grid-area: text;
+    text-align: right;
+    color: white;
+  }
+  
+  .text-section p {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .text-section span {
+    font-size: 14px;
+    display: block;
+  }
+  
+  .laptop-image {
+    grid-area: laptop;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .laptop-image img {
+    width: 13em;
+    height: 10em;
+    border-radius: 10px;
+  }
+  .myself{
+    margin-right: 6em;
+    
+  }
+  .container .developer2{
+    display: flex;
+    padding-top: 2em;
+    flex-direction: column;}
+
+
+  .About h1{
+    font-size: 2em;
+    color:white;
+    padding-bottom: 13px;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 2em;
+  }
+  .About h2{
+    font-size: 1.1em;
+    padding-bottom: 13px;
+  }
+  .container .my-info{
+    display: flex;
+    border: 2px solid;
+    width: 50%;
+    border-color: var(--main-color);
+    border-radius: 1em;
+    margin-bottom: 1em;
+    height: 14em;
+    font-size: 1.2em;
+    margin-left: 12em;
+  }
+  .my-info1{
+    border-right: 2px solid;
+    border-color: var(--main-color);
+  }
+  .my-info1 p{
+    padding-right: 7px;
+  }
+  .my-info p strong{
+    font-size: 1.5em;
+    color: white;
+  }
+  .my-info p span{
+     font-size: 1em; 
+  }
+  .cv-button a button{
+    margin-top: 1em;
+    margin-left: 21em;
+    padding: 10px;
+    border-radius: 1.5em;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .service-header{
+    margin-left: -40px;
+  }
+
+  .service-header h2{
+    padding-top: 13em;
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  .service-header h6{
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  .container .my-services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2em;
+    margin-left: 35px;
+  }
+  .my-service1,.my-service2,.my-service3,.my-service4{
+    border: 2px solid;
+    width: 25em;  
+    margin-left: 1em;
+    height: 15em;
+    margin-top: 1em;
+    border-color: var(--main-color);
+  
+  }
+  .my-services h5 .bx{
+    margin-top: 10px;
+    font-size: 4em  ;
+    color: var(--main-color);
+  }
+  .container .my-services h5{
+    text-align: center;
+  }
+  .container .my-services h1{
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+  }
+  .my-services p{
+    font-size: 1.2em;
+  }
+
+
+  /*  */
+  
+.Projects{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ 
+  
+}
+.Project-header{
+  font-size: 2em;
+  margin-left: -25px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 15em;
+}
+.Project-header h5{
+  color: var(--main-color);
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.Project-header h2{
+  font-size: 18px;
+}
+.Project-text .link a{
+ 
+  display: flex;
+    padding-top: 2.5em; 
+    padding-left: 1em; 
+    font-size: 2em;
+    color: black;
+    align-content: center;
+}
+.Project-text .links a{
+  
+    padding-left: 6.2em; 
+    font-size: 2em;
+    color: black;
+}
+
+.Project-text .text{
+  font-weight: 800;
+  font-size: 11px;
+  padding: 5px;
+  
+}
+.Project1,.Project3{
+  display: flex;
+   background-image: url(hqd6.jfif);    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+   width: 85%; 
+  padding-bottom: 12em;
+  margin-right: 15px;
+  height: 22em;
+}
+
+
+.Project1 .date,.Project2 .date,.Project3 .date{
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+  background-color: black;
+  color: white;
+   border-width: -5px; 
+  border-bottom-right-radius: 50px;
+  height: 5.5em;
+  width: 28%;
+}
+
+.Project1 .image .date{
+  display: flex;
+  flex-wrap: wrap;
+}
+.date-text{
+  display: flex;
+  flex-direction: column;
+}
+.date1{
+  border-right: solid 1px;
+  padding-right: 10px; 
+  height: 5em;
+}
+
+.date2{
+  padding-left: -5px;
+  margin-bottom: 1px;
+}
+.Project2 .date2{
+  margin-bottom: 10px;
+}
+.date11,.date12,.date13{
+  font-weight: 900;
+  font-size: 8px;
+  color: var(--main-color);
+}
+.date120{
+  font-size: 8px;
+  
+}
+.month1,.month3{
+  text-align: center;
+  font-size: 8px;
+  /* color: var(--main-color); */
+}
+.Project2{
+   background-image: url(service1.jfif); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    height: 22em;  
+   width: 85%; 
+  
+  
+}
+.Project2 .date{  
+ width: 25.5%; 
+ text-align: center;
+ align-items: center;    
+}
+.date12 span{
+  font-size: 10%;
+  align-items: flex-end;
+}
+.Project3{
+   background-image: url(home2.jfif); 
+   width: 85%; 
+   padding-bottom: 8em;
+   margin-right: 15px;
+   padding-bottom: 5em;
+   height: 20em;
+}
+
+
+
+
+.footer-text{
+   padding-top: 43em;
+  
+}
+.footer-text h6{
+  
+  font-size: 20px;
+}
+.footer-text h2{
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-top: 3px;
+  margin-bottom: 3px;    
+ 
+}
+
+.footer-text h5{
+color: black;
+font-size: 12px;
+
+}
+
+.footer-contact1,.footer-contact2,.footer-contact3,.footer-contact4,.footer-contact5{
+  border: 1px solid;
+  font-size: 1.5em;
+  margin: 10px;
+   display: flex; 
+   width: 9em;
+   background-color: #333333;
+    text-align: center; 
+}
+
+
+.footer-contactss p{
+  
+  font-size: 9px;
+}
+.footer-contacts p{
+ 
+  font-size: 8px;
+}
+
+.copy-write{
+  
+  font-size: 15px;
+}
+
+
+     
+  }
+
+  @media screen and (max-width:500px){
+    .container{
+      padding-left: 1em;
+    }
+
+    .Home .container{
+      padding-top: 5em;
+      display: flex;
+      flex-direction: column;
+    }
+    .Home-info{
+       flex: 1;
+       padding-top: 4em;
+    }
+    .Home-info h6{
+      font-size: 2em;
+    }
+    .Home-info h2{
+      font-size: 2.5em;
+      color: white;
+    }
+    .Home-info h5{
+      font-size: 2em;
+    }
+   
+    .Home-info h4{
+      font-size: 2em;
+    }
+    .Home-info h4 span{
+      color: white;
+      font-size: 1.5em;
+    }
+    .Home-info .know-more{
+      display: flex;
+    }
+    .contact-icons a i{  
+      font-size: 3.5em;
+      margin-top: 7px;
+  
+    }
+    .Home-info button a{
+      color: white;
+      text-transform: uppercase;
+  
+    }
+    
+    .Home-pics img{
+      width: 70%;
+      border: 12px solid;
+      border-color: var(--main-color);
+      margin-top: 2em;
+    }
+  .container .Home-icons{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 13em;
+  }
+  .Home-icons h5{
+    font-size: 3em;
+    color: var(--main-color);
+  }
+  .Home-icons h3{
+    color: white;
+  }
+  .Home-icons p{
+    color: rgb(29, 28, 28);
+  }
+  .Home-icon1,.Home-icon2,.Home-icon3{
+    border: 2px solid;
+    font-size: 1.5em;
+    height: 17em;
+    width: 26em;
+    margin-bottom: 1em;
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
+  }
+  .Home-icons h5,h3,p{
+     margin-left: 1em; 
+    margin-top: 10px;
+  }
+   
+   .container .developer h6{
+    color:var(--main-color) ;
+    font-size: 1.5em;
+    margin-top: 32em;
+    margin-right: 2em;
+  }
+  .container .developer h2{
+    font-size: 2em;
+    color: white;
+    margin-right: 2em;
+  }
+  .myself {
+    width: 33em;
+    height: 33em;
+    margin-left: 5em;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-areas:
+        "badge main"
+        "laptop main"
+        "laptop text";
+    grid-gap: 10px;
+  }
+  
+  .badge-icon {
+    grid-area: badge;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .badge-icon .bx {
+    font-size: 4em;
+    border: 2px solid;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  .main-image {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-image img {
+    width: 17em;
+    height: 22em;
+    border-radius: 50%;
+  }
+  
+  .text-section {
+    grid-area: text;
+    text-align: right;
+    color: white;
+  }
+  
+  .text-section p {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .text-section span {
+    font-size: 14px;
+    display: block;
+  }
+  
+  .laptop-image {
+    grid-area: laptop;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .laptop-image img {
+    width: 11em;
+    height: 10em;
+    border-radius: 10px;
+  }
+  .myself{
+    margin-right: 6em;
+    
+  }
+  .container .developer2{
+    display: flex;
+    padding-top: 2em;
+    flex-direction: column;}
+  .About h1{
+    font-size: 2em;
+    color:white;
+    padding-bottom: 13px;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 2em;
+  }
+  .About h2{
+    font-size: 1.1em;
+    padding-bottom: 13px;
+  }
+  .container .my-info{
+    display: flex;
+    border: 2px solid;
+    width: 70%;
+    border-color: var(--main-color);
+    border-radius: 1em;
+    margin-bottom: 1em;
+    height: 14em;
+    font-size: 1em;
+    margin-left: 5em;
+  }
+  .my-info1{
+    border-right: 2px solid;
+    border-color: var(--main-color);
+  }
+  .my-info1 p{
+    padding-right: 7px;
+  }
+  .my-info p strong{
+    font-size: 1.5em;
+    color: white;
+  }
+  .my-info p span{
+     font-size: 1em; 
+  }
+  .cv-button a button{
+    margin-top: 1em;
+    margin-left: 12em;
+    padding: 8px;
+    border-radius: 1.5em;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .service-header{
+    margin-left: -40px;
+  }
+
+  .service-header h2{
+    padding-top: 10em;
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  .service-header h6{
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  .container .my-services{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2em;
+    margin-left: 35px;
+  }
+  .my-service1,.my-service2,.my-service3,.my-service4{
+    border: 2px solid;
+    width: 25em;  
+    margin-left: 4em;
+    height: 15em;
+    margin-top: 1em;
+    border-color: var(--main-color);
+  
+  }
+  .my-services h5 .bx{
+    margin-top: 10px;
+    font-size: 4em  ;
+    color: var(--main-color);
+  }
+  .container .my-services h5{
+    text-align: center;
+  }
+  .container .my-services h1{
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+  }
+  .my-services p{
+    font-size: 1.2em;
+  }
+
+
+  /*  */
+  
+.Projects{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+ 
+  
+}
+.Project-header{
+  font-size: 2em;
+  margin-left: -25px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 30em;
+}
+.Project-header h5{
+  color: var(--main-color);
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.Project-header h2{
+  font-size: 18px;
+}
+.Project-text .link a{
+ 
+  display: flex;
+    padding-top: 3.5em; 
+    padding-left: 2.5em; 
+    font-size: 2em;
+    color: black;
+    align-content: center;
+}
+.Project-text .links a{
+  
+    padding-left: 8em; 
+    font-size: 2em;
+    color: black;
+}
+
+.Project-text .text{
+  font-weight: 800;
+  font-size: 11px;
+  padding: 5px;
+  
+}
+.Project1,.Project3{
+  display: flex;
+   background-image: url(hqd6.jfif);    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+   width: 85%; 
+  padding-bottom: 12em;
+  margin-right: 15px;
+  height: 22em;
+}
+
+
+.Project1 .date,.Project2 .date,.Project3 .date{
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+  background-color: black;
+  color: white;
+   border-width: -5px; 
+  border-bottom-right-radius: 50px;
+  height: 5.5em;
+  width: 24%;
+}
+
+.Project1 .image .date{
+  display: flex;
+  flex-wrap: wrap;
+}
+.date-text{
+  display: flex;
+  flex-direction: column;
+}
+.date1{
+  border-right: solid 1px;
+  padding-right: 10px; 
+  height: 5em;
+}
+
+.date2{
+  padding-left: -5px;
+  margin-bottom: 1px;
+}
+.Project2 .date2{
+  margin-bottom: 10px;
+}
+.date11,.date12,.date13{
+  font-weight: 900;
+  font-size: 8px;
+  color: var(--main-color);
+}
+.date120{
+  font-size: 8px;
+  
+}
+.month1,.month3{
+  text-align: center;
+  font-size: 8px;
+  /* color: var(--main-color); */
+}
+.Project2{
+   background-image: url(service1.jfif); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    height: 20em;  
+   width: 85%; 
+  
+  
+}
+.Project2 .date{  
+ width: 22.5%; 
+ text-align: center;
+ align-items: center;    
+}
+.date12 span{
+  font-size: 10%;
+  align-items: flex-end;
+}
+.Project3{
+   background-image: url(home2.jfif); 
+   width: 85%; 
+   padding-bottom: 8em;
+   margin-right: 15px;
+   padding-bottom: 5em;
+   height: 20em;
+}
+
+
+
+
+.footer-text{
+   padding-top: 93em;
+  
+}
+.footer-text h6{
+  
+  font-size: 20px;
+}
+.footer-text h2{
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-top: 3px;
+  margin-bottom: 3px;    
+ 
+}
+
+.footer-text h5{
+color: black;
+font-size: 12px;
+
+}
+
+.footer-contact1,.footer-contact2,.footer-contact3,.footer-contact4,.footer-contact5{
+  border: 1px solid;
+  font-size: 1.5em;
+  margin: 10px;
+   display: flex; 
+   width: 9em;
+   background-color: #333333;
+    text-align: center; 
+}
+
+
+.footer-contactss p{
+  
+  font-size: 9px;
+}
+.footer-contacts p{
+ 
+  font-size: 8px;
+}
+
+.copy-write{
+  
+  font-size: 15px;
+}
+
+
+  
+
+  }
+  
+ 
+  @media screen and (max-width:390px){
+
+    .container{
+      padding-left: 1em;
+    }
+
+    .Home .container{
+      padding-top: 5em;
+      display: flex;
+      flex-direction: column;
+    }
+    .Home-info{
+       flex: 1;
+       padding-top: 4em;
+    }
+    .Home-info h6{
+      font-size: 1.3em;
+    }
+    .Home-info h2{
+      font-size: 2em;
+      color: white;
+    }
+    .Home-info h5{
+      font-size: 1.5em;
+    }
+   
+    .Home-info h4{
+      font-size: 1.5em;
+    }
+    .Home-info h4 span{
+      color: white;
+      font-size: 1em;
+    }
+    .Home-info .know-more{
+      display: flex;
+    }
+    .contact-icons a i{  
+      font-size: 2.5em;
+  
+    }
+    .Home-info button a{
+      color: white;
+      text-transform: uppercase;
+  
+    }
+    
+    .Home-pics img{
+      width: 50%;
+      border: 10px solid;
+      border-color: var(--main-color);
+      margin-top: 2em;
+    }
+  .container .Home-icons{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 5px;
+  }
+  .Home-icons h5{
+    font-size: 2.5em;
+    color: var(--main-color);
+  }
+  .Home-icons h3{
+    color: white;
+  }
+  .Home-icons p{
+    color: rgb(29, 28, 28);
+  }
+  .Home-icon1,.Home-icon2,.Home-icon3{
+    border: 2px solid;
+    font-size: 1em;
+    height: 15em;
+    width: 26em;
+    margin-bottom: 1em;
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
+  }
+  .Home-icons h5,h3,p{
+     margin-left: 1em; 
+    margin-top: 10px;
+  }
+   
+   .container .developer h6{
+    color:var(--main-color) ;
+    font-size: 1.5em;
+    margin-top: 5em;
+    margin-right: 2em;
+  }
+  .container .developer h2{
+    font-size: 2em;
+    color: white;
+    margin-right: 2em;
+  }
+  .myself {
+    width: 30em;
+    height: 30em;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-areas:
+        "badge main"
+        "laptop main"
+        "laptop text";
+    grid-gap: 10px;
+  }
+  
+  .badge-icon {
+    grid-area: badge;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .badge-icon .bx {
+    font-size: 4em;
+    border: 2px solid;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  .main-image {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-image img {
+    width: 15em;
+    height: 20em;
+    border-radius: 50%;
+  }
+  
+  .text-section {
+    grid-area: text;
+    text-align: right;
+    color: white;
+  }
+  
+  .text-section p {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .text-section span {
+    font-size: 14px;
+    display: block;
+  }
+  
+  .laptop-image {
+    grid-area: laptop;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .laptop-image img {
+    width: 10em;
+    height: 9em;
+    border-radius: 10px;
+  }
+  .myself{
+    /* margin-right: 1em; */
+    margin-left: 2em;
+    
+  }
+  .container .developer2{
+    display: flex;
+    padding-top: 2em;
+    flex-direction: column;}
+  .About h1{
+    font-size: 1.5em;
+    color:white;
+    padding-bottom: 13px;
+    padding-top: 10px;
+  }
+  .About h2{
+    font-size: 1.1em;
+    padding-bottom: 13px;
+  }
+  .container .my-info{
+    display: flex;
+    border: 2px solid;
+    width: 87%;
+    border-color: var(--main-color);
+    border-radius: 1em;
+    margin-bottom: 1em;
+    height: 14em;
+    margin-left: 2em;
+  }
+  .my-info1{
+    border-right: 2px solid;
+    border-color: var(--main-color);
+  }
+  .my-info1 p{
+    padding-right: 7px;
+  }
+  .my-info p strong{
+    font-size: 1.5em;
+    color: white;
+  }
+  .my-info p span{
+     font-size: 1em; 
+  }
+  .cv-button a button{
+    margin-top: 1em;
+    margin-left: 8em;
+    padding: 8px;
+    border-radius: 1.5em;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .service-header{
+    margin-left: -40px;
+  }
+
+  .service-header h2{
+    padding-top: 11em;
+    text-align: center;
+    font-size: 2em;
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  .service-header h6{
+    text-align: center;
+    font-size: 1em;
+    color: black;
+  }
+  
+  .container .my-services{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2em;
+    margin-left: -10px;
+  }
+  .my-service1,.my-service2,.my-service3,.my-service4{
+    border: 2px solid;
+    width: 25em;  
+    margin-left: 4em;
+    height: 12em;
+    margin-top: 1em;
+    border-color: var(--main-color);
+  
+  }
+  .my-services h5 .bx{
+    margin-top: 10px;
+    font-size: 3.5em  ;
+    color: var(--main-color);
+  }
+  .container .my-services h5{
+    text-align: center;
+  }
+  .container .my-services h1{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+  }
+  .my-services p{
+    font-size: 1em;
+  }
+
+
+  /*  */
+  
+.Projects{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+ 
+  
+}
+.Project-header{
+  font-size: 2em;
+  margin-left: -25px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 20em;
+}
+.Project-header h5{
+  color: var(--main-color);
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.Project-header h2{
+  font-size: 13px;
+}
+.Project-text .link a{
+ 
+  display: flex;
+    padding-top: 3.5em; 
+    padding-left: 1em; 
+    font-size: 2em;
+    color: black;
+    align-content: center;
+}
+.Project-text .links a{
+  
+    padding-left: 6em; 
+    font-size: 2em;
+    color: black;
+}
+
+.Project-text .text{
+  font-weight: 800;
+  font-size: 11px;
+  padding: 5px;
+  
+}
+.Project1,.Project3{
+  display: flex;
+   background-image: url(hqd6.jfif);    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+   width: 95%; 
+  padding-bottom: 12em;
+  margin-right: 15px;
+}
+.Project3{
+  /* padding-bottom: 20em; */
+}
+
+.Project1 .date,.Project2 .date,.Project3 .date{
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+  background-color: black;
+  color: white;
+   border-width: -5px; 
+  border-bottom-right-radius: 50px;
+  height: 5.5em;
+  width: 27%;
+}
+.Project1 .image .date{
+  display: flex;
+  flex-wrap: wrap;
+}
+.date-text{
+  display: flex;
+  flex-direction: column;
+}
+.date1{
+  border-right: solid 1px;
+  padding-right: 10px; 
+  height: 5em;
+}
+
+.date2{
+  padding-left: -5px;
+  margin-bottom: 1px;
+}
+.Project2 .date2{
+  margin-bottom: 10px;
+}
+.date11,.date12,.date13{
+  font-weight: 900;
+  font-size: 8px;
+  color: var(--main-color);
+}
+.date120{
+  font-size: 8px;
+  
+}
+.month1,.month3{
+  text-align: center;
+  font-size: 8px;
+  /* color: var(--main-color); */
+}
+.Project2{
+   background-image: url(service1.jfif); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    height: 20em;  
+   width: 92%; 
+  
+  
+}
+.Project2 .date{  
+ width: 25.5%; 
+ text-align: center;
+ align-items: center;    
+}
+.date12 span{
+  font-size: 10%;
+  align-items: flex-end;
+}
+.Project3{
+   background-image: url(home2.jfif); 
+   width: 95%; 
+   padding-bottom: 8em;
+   margin-right: 15px;
+}
+
+
+
+
+.footer-text{
+   padding-top: 73em;
+  
+}
+.footer-text h6{
+  
+  font-size: 14px;
+}
+.footer-text h2{
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-top: 3px;
+  margin-bottom: 3px;    
+ 
+}
+
+.footer-text h5{
+color: black;
+font-size: 10px;
+
+}
+
+.footer-contact1,.footer-contact2,.footer-contact3,.footer-contact4,.footer-contact5{
+  border: 1px solid;
+  font-size: 1.5em;
+  margin: 10px;
+   display: flex; 
+   width: 9em;
+   background-color: #333333;
+    text-align: center; 
+}
+
+.footer-contactss i,.footer-contacts i{
+  
+}
+.footer-contactss p{
+  
+  font-size: 7px;
+}
+.footer-contacts p{
+ 
+  font-size: 8px;
+}
+
+.copy-write{
+  
+  font-size: 10px;
+}
+
+
+  
+
+  }
