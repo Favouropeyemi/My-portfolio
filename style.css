@@ -42,7 +42,7 @@
       display: flex;
       align-items: center;
       transition: 0.5s;
-      background:transparent;
+       background:var(--bg-color); 
       justify-content: space-between;
   }
   .logo{
@@ -891,7 +891,7 @@ font-size: 8px;
 .month1,.month3{
 text-align: center;
 font-size: 8px;
-/* color: var(--main-color); */
+
 }
 .Project2{
  background-image: url(service1.jfif); 
@@ -1829,7 +1829,6 @@ font-size: 12px;
 .month1,.month3{
   text-align: center;
   font-size: 8px;
-  /* color: var(--main-color); */
 }
 .Project2{
    background-image: url(service1.jfif); 
@@ -1960,17 +1959,27 @@ font-size: 12px;
       text-transform: uppercase;
   
     }
+    .Home-pics{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     
     .Home-pics img{
-      width: 50%;
+      width: 75%;
       border: 10px solid;
       border-color: var(--main-color);
       margin-top: 2em;
+      margin-right: 2em;
+      
+      
     }
   .container .Home-icons{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    padding-top: 5px;
+    padding-top: 4em;
+    padding-left: 3em;
   }
   .Home-icons h5{
     font-size: 2.5em;
@@ -2078,7 +2087,6 @@ font-size: 12px;
     border-radius: 10px;
   }
   .myself{
-    /* margin-right: 1em; */
     margin-left: 2em;
     
   }
