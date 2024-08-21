@@ -21,7 +21,7 @@
     padding: 0 auto;
   }
   :root{
-       --bg-color:rgb(81, 81, 221); 
+       --bg-color:rgb(102, 102, 192); 
       --text-color:white;
       --main-color:rgba(207, 207, 15, 0.781);
   }
@@ -31,6 +31,7 @@
   }
   body{
       background-color: var(--bg-color);
+
   }
   .navigator{
       position: fixed;
