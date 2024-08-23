@@ -518,7 +518,9 @@ text-transform: capitalize;
 
 
 @media (max-width:991px){
-  
+  body{
+    font-size: 62.5%;
+  }
   .container{
     padding-left: 1em;
   }
