@@ -517,7 +517,7 @@ text-transform: capitalize;
 }
 
 
-@media screen and (max-width:991px){
+@media (max-width:991px){
   
   .container{
     padding-left: 1em;
@@ -978,7 +978,7 @@ font-size: 20px;
 
   
   
-  @media screen and (max-width:768px){
+  @media (max-width:768px){
      #menu-icon{
       display: block;
      }
@@ -1461,7 +1461,7 @@ font-size: 12px;
      
   }
 
-  @media screen and (max-width:500px){
+  @media (max-width:500px){
     .container{
       padding-left: 1em;
     }
@@ -1915,7 +1915,7 @@ font-size: 12px;
   }
   
  
-  @media screen and (max-width:390px){
+  @media (max-width:390px){
 
     .container{
       padding-left: 1em;
