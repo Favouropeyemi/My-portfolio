@@ -973,11 +973,6 @@ font-size: 20px;
 }
 
 }
-
-
-
-  
-  
   @media (max-width:768px){
      #menu-icon{
       display: block;
@@ -1001,7 +996,9 @@ font-size: 20px;
       margin: 3rem 0;
      }
 
-
+section{
+  height: auto;
+}
 
 
      .container{
@@ -1913,8 +1910,6 @@ font-size: 12px;
   
 
   }
-  
- 
   @media (max-width:390px){
 
     .container{
